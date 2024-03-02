@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".view.ProfileFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutLogout"
+            android:layout_width="374dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/searchview_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutDonations">
+
+            <ImageView
+                android:id="@+id/imageViewLogOut"
+                android:layout_width="45dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="76dp"
+                android:src="@drawable/baseline_cloud_off_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/profileLogOutTextView"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.517" />
+
+            <ImageView
+                android:id="@+id/profilePasswordArrowImageView2"
+                android:layout_width="20dp"
+                android:layout_height="29dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/green"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.509"
+                app:tint="@color/green" />
+            <!--
+            android:src="@drawable/arrow"
+            -->
+        <TextView
+            android:id="@+id/profileLogOutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profilePasswordArrowImageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutDonations"
+        android:layout_width="374dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/searchview_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutFavorites">
+
+        <ImageView
+            android:id="@+id/imageViewDonations2"
+            android:layout_width="45dp"
+            android:layout_height="47dp"
+            android:src="@drawable/baseline_card_giftcard_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profileDonationsTextView"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.517" />
+
+        <ImageView
+            android:id="@+id/profilePasswordArrowImageView3"
+            android:layout_width="20dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.509"
+            app:tint="@color/green" />
+        <!--
+            android:src="@drawable/arrow"
+            -->
+
+        <TextView
+            android:id="@+id/profileDonationsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donations"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profilePasswordArrowImageView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutFavorites"
+        android:layout_width="374dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/searchview_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutUpdate">
+
+        <ImageView
+            android:id="@+id/imageViewFavorites"
+            android:layout_width="45dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/baseline_add_task_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profileFavouritesTextView"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.448" />
+
+        <ImageView
+            android:id="@+id/profilePasswordArrowImageView4"
+            android:layout_width="20dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.509"
+            app:tint="@color/green" />
+        <!--
+            android:src="@drawable/arrow"
+            -->
+
+        <TextView
+            android:id="@+id/profileFavouritesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourites"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profilePasswordArrowImageView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="235dp"
+            android:background="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/profileNameTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/profileTextView"
+                    android:layout_width="78dp"
+                    android:layout_height="33dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Profile"
+                    android:textColor="@color/green"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.523" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageViewDonations"
+                android:layout_width="66dp"
+                android:layout_height="0dp"
+                android:src="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <RatingBar
+                android:id="@+id/profileRatingBar"
+                android:layout_width="242dp"
+                android:layout_height="40dp"
+                android:progressTint="#FF9800"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewDonations"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.964" />
+
+            <TextView
+                android:id="@+id/profileNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Erdem KARADENIZ"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewDonations"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.23" />
+
+            <TextView
+                android:id="@+id/profileMailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="124dp"
+                android:text="erdemkaradeniz1011@gmail.com"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewDonations"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.028" />
+
+            <TextView
+                android:id="@+id/profileRatingTextView"
+                android:layout_width="43dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="125dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="4.5"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/profileRatingBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewPoint"
+                app:layout_constraintTop_toBottomOf="@+id/profileMailTextView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="-2dp"
+                android:text="@string/rating"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/profileRatingBar"
+                app:layout_constraintEnd_toStartOf="@+id/profileRatingTextView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileMailTextView"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutUpdate"
+        android:layout_width="374dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/searchview_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:id="@+id/profilePasswordArrowImageView5"
+            android:layout_width="20dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.509"
+            app:tint="@color/green" />
+
+        <!--
+            android:src="@drawable/arrow"
+            -->
+
+        <TextView
+            android:id="@+id/profileInformationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Information"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profilePasswordArrowImageView5"
+            app:layout_constraintHorizontal_bias="0.549"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.489" />
+
+        <ImageView
+            android:id="@+id/imageViewUpdate"
+            android:layout_width="45dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/baseline_change_circle_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profileInformationTextView"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.517" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="142dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/points"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/circle_product"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="60dp"
+        android:layout_height="31dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/value"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

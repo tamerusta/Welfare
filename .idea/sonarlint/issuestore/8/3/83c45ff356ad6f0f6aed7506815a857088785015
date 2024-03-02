@@ -1,0 +1,15 @@
+
+\kotlin:S6619ü"<Remove this useless null-safe access ?., it always succeeds.(ïïþÛ8üß”Ü1
+\kotlin:S6619†"<Remove this useless null-safe access ?., it always succeeds.(„‚É¿8ýß”Ü1
+Jkotlin:S1481¸"*Remove this unused "phone" local variable.(”ŒÆ8÷õÞ”Ü1
+Ikotlin:S1481µ")Remove this unused "name" local variable.(ÀÅ†8øõÞ”Ü1
+Hkotlin:S1874Ê"#Deprecated code should not be used.(´¾ø½ýÿÿÿÿ8¡ß”Ü1
+Hkotlin:S1874ï"#Deprecated code should not be used.(š¹¬Ôýÿÿÿÿ8¢ß”Ü1
+Hkotlin:S1874ð"#Deprecated code should not be used.(¡Ýî¹ÿÿÿÿÿ8¢ß”Ü1
+Hkotlin:S1874ð"#Deprecated code should not be used.(¡Ýî¹ÿÿÿÿÿ8¢ß”Ü1
+Ckotlin:S1874ñ"#Deprecated code should not be used.(›†¼‹8öÞ”Ü1
+Ckotlin:S1874ò"#Deprecated code should not be used.(þûÇî8öÞ”Ü1
+Ckotlin:S1874›"#Deprecated code should not be used.(š‹²˜8¢ß”Ü1
+zkotlin:S1186§"ZAdd a nested comment explaining why this function is empty or complete the implementation.(Ýéòæ8ªß”Ü1
+zkotlin:S1186¨"ZAdd a nested comment explaining why this function is empty or complete the implementation.(©£ð¯8ªß”Ü1
+`kotlin:S6510º"AMove "return" statements from all branches before "if" statement.(ïÉ¼8«ß”Ü1

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".common.GoogleMapsFragment">
+
+    <TextView
+
+        android:id="@+id/textViewLocationLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enlem"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLocationLongitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocationAdress" />
+
+    <TextView
+        android:id="@+id/textViewLocationLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="boylam "
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLocationGetLoc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocationLatitude" />
+
+    <Button
+        android:id="@+id/buttonLocationGetLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="40dp"
+        android:text="Konum al"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocationLongitude" />
+
+    <TextView
+        android:id="@+id/textViewLocationAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="adres"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLocationLatitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocationCity" />
+
+    <TextView
+        android:id="@+id/textViewLocationCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="şehir"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLocationAdress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

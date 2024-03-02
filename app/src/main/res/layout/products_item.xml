@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="290dp">
+
+    <!-- Product Photo -->
+
+    <!-- Product Name -->
+
+    <!-- Product Category -->
+
+    <View
+        android:id="@+id/viewBackground"
+        android:layout_width="262dp"
+        android:layout_height="285dp"
+        android:background="@drawable/outlined_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="102dp" />
+
+    <ImageView
+        android:id="@+id/img_products"
+        android:layout_width="183dp"
+        android:layout_height="207dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="V,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <View
+        android:id="@+id/viewValueBackground"
+        android:layout_width="79dp"
+        android:layout_height="34dp"
+        android:background="@drawable/rounded_corner_background"
+        app:layout_constraintBottom_toBottomOf="@+id/img_products"
+        app:layout_constraintEnd_toEndOf="@+id/img_products"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/img_products" />
+
+    <TextView
+        android:id="@+id/name_product"
+        android:layout_width="242dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Product Name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/img_products"
+        app:layout_constraintTop_toBottomOf="@+id/img_products" />
+
+    <TextView
+        android:id="@+id/category_product"
+        android:layout_width="243dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="2dp"
+        android:text="Product Category"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/img_products"
+        app:layout_constraintTop_toBottomOf="@+id/name_product" />
+
+    <ImageView
+        android:id="@+id/imageValue"
+        android:layout_width="24dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewValueBackground"
+        app:layout_constraintStart_toStartOf="@+id/viewValueBackground"
+        app:layout_constraintTop_toTopOf="@+id/viewValueBackground"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/circle_product" />
+
+    <TextView
+        android:id="@+id/point_product"
+        android:layout_width="43dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="100"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewValueBackground"
+        app:layout_constraintEnd_toEndOf="@+id/viewValueBackground"
+        app:layout_constraintStart_toEndOf="@+id/imageValue"
+        app:layout_constraintTop_toTopOf="@+id/viewValueBackground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_last_products"
+            android:layout_width="87dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_last_product"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/category_last_product"
+            app:layout_constraintStart_toStartOf="@+id/category_last_product"
+            app:layout_constraintTop_toTopOf="@+id/img_last_products" />
+
+        <TextView
+            android:id="@+id/category_last_product"
+            android:layout_width="106dp"
+            android:layout_height="18dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/info_last_product"
+            app:layout_constraintStart_toEndOf="@+id/img_last_products"
+            app:layout_constraintStart_toStartOf="@+id/info_last_product"
+            app:layout_constraintTop_toBottomOf="@+id/name_last_product">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/info_last_product"
+            android:layout_width="110dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="16dp"
+            android:text="Pending"
+            android:textColor="#D18E1A"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/img_last_products" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

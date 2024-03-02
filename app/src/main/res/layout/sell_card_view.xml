@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="177dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp">
+
+
+            <ImageView
+                android:id="@+id/productPhoto"
+                android:layout_width="103dp"
+                android:layout_height="107dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.019"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.555" />
+
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="141dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/shopping_done"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="228dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.904"
+                app:srcCompat="@drawable/verify_icon" />
+
+            <TextView
+                android:id="@+id/textViewTag"
+                android:layout_width="87dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/product_tag"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.083"
+                app:layout_constraintStart_toEndOf="@+id/productPhoto"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.062" />
+
+            <TextView
+                android:id="@+id/textViewCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_category"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.419"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.505" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewStatus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.262"
+                app:srcCompat="@drawable/circle_product" />
+
+            <TextView
+                android:id="@+id/textViewPoint"
+                android:layout_width="32dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="9dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="100"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewStatus"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.934"
+                app:layout_constraintStart_toEndOf="@+id/textViewTag"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.269" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

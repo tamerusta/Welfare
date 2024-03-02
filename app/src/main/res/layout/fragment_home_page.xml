@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/system_neutral1_50"
+    tools:context=".HomeActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#288628"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="400dp"
+        android:layout_height="48dp"
+        android:background="@drawable/searchbar_outline"
+        android:hint="@string/lbl_search_hint"
+        android:paddingLeft="60dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/material_dynamic_neutral90"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarCategories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeFragmentMenuImageView"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchText"
+        app:layout_constraintStart_toStartOf="@+id/toolbarCategories"
+        app:layout_constraintTop_toTopOf="@+id/searchText"
+        app:srcCompat="@drawable/baseline_density_medium_24"
+        app:tint="#288628" />
+
+
+    <TextView
+        android:id="@+id/textViewLastProcesses"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarCategories" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/last_process_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProducts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLastProcesses" />
+
+    <TextView
+        android:id="@+id/textViewProducts"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/products_recycler_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_process_recycler_view"
+        tools:ignore="NotSibling" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProducts">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/products_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_neutral90"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchText" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:tint="#288628"
+        app:layout_constraintBottom_toBottomOf="@+id/searchText"
+        app:layout_constraintEnd_toEndOf="@+id/searchText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/baseline_search_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

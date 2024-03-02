@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#288628"
+    android:padding="16dp">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRegister"
+        style="@style/btnGradientRounded"
+        android:layout_width="235dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/_7pxh"
+        android:paddingStart="@dimen/_30pxh"
+        android:paddingTop="@dimen/_9pxv"
+        android:paddingEnd="@dimen/_30pxh"
+        android:paddingBottom="@dimen/_9pxv"
+        android:singleLine="true"
+        android:text="@string/lbl_next"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutMain"
+        app:layout_constraintVertical_bias="0.3"
+        tools:text="@string/lbl_next" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterAdressTextView">
+
+        <CheckBox
+            android:id="@+id/checkBoxRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:drawableTint="#FFFFFF"
+            android:foregroundTint="#FFFFFF"
+            android:textStyle="bold"
+            app:buttonIconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewTermOfUse"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewPrivacyPolicyLink"
+            android:layout_width="89dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="Privacy Policy"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewPrivacyPolicy"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewTermOfUse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text=" and "
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxRememberMe" />
+
+        <TextView
+            android:id="@+id/textViewTermOfUseLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="228dp"
+            android:layout_marginBottom="8dp"
+            android:text="Term of Use"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPrivacyPolicy"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewPrivacyPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="3dp"
+            android:text="By continuing you accept our "
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/textViewPrivacyPolicyLink"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxRememberMe"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/RegisterAdressTextView"
+        android:layout_width="322dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPoint"
+        app:srcCompat="@drawable/img_haritanedirgo"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/img_haritanedirgo" />
+
+    <TextView
+        android:id="@+id/textViewPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Please Click Map For Your Address Information"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationData"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/password"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="368dp"
+        android:background="@drawable/layout_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownIdInLayout">
+
+        <EditText
+            android:id="@+id/editTextPasswordLogin"
+            style="@style/EditTextWithoutUnderline"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="55dp"
+            android:ellipsize="end"
+            android:hint="Password Again"
+            android:inputType="textPassword"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:textColor="@color/white_A700"
+            android:textColorHint="@color/gray_50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523" />
+
+        <ImageView
+            android:id="@+id/imagePadlock"
+            android:layout_width="@dimen/_34pxh"
+            android:layout_height="@dimen/_34pxh"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:foregroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_padlock"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white_A700"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_padlock" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewListItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="260dp"
+        android:text="*Must be between 6 and 32 characters long."
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewListItem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="316dp"
+        android:text="*To make your password strong, it is recommended to fill the bar at least to yellow."
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewListItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="288dp"
+        android:text="*Should not contain spaces."
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/strengthBar4"
+        android:layout_width="80dp"
+        android:layout_height="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/strengthBar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/strengthBar3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/strengthBar2"
+        android:layout_width="80dp"
+        android:layout_height="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="7dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/strengthBar1"
+        app:layout_constraintEnd_toStartOf="@+id/strengthBar3"
+        app:layout_constraintTop_toTopOf="@+id/strengthBar1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/strengthBar3"
+        android:layout_width="80dp"
+        android:layout_height="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="7dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/strengthBar2"
+        app:layout_constraintEnd_toStartOf="@+id/strengthBar4"
+        app:layout_constraintTop_toTopOf="@+id/strengthBar2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/strengthBar1"
+        android:layout_width="80dp"
+        android:layout_height="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="7dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/strengthBar2"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/locationData"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/layout_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password">
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            style="@style/EditTextWithoutUnderline"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="55dp"
+            android:ellipsize="end"
+            android:hint="Location"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:textColor="@color/white_A700"
+            android:textColorHint="@color/gray_50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523" />
+
+        <ImageView
+            android:id="@+id/imageLocation"
+            android:layout_width="@dimen/_34pxh"
+            android:layout_height="@dimen/_34pxh"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:foregroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_location"
+            app:tint="@color/white_A700"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_location" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/passwordAgain"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/layout_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            style="@style/EditTextWithoutUnderline"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="55dp"
+            android:ellipsize="end"
+            android:hint="@string/lbl_password"
+            android:inputType="textPassword"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:textColor="@color/white_A700"
+            android:textColorHint="@color/gray_50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523" />
+
+        <ImageView
+            android:id="@+id/imagePadlockTwo"
+            android:layout_width="@dimen/_34pxh"
+            android:layout_height="@dimen/_34pxh"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:foregroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_padlock"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white_A700"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_padlock" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/textViewAlmostDone"
+        android:layout_width="@dimen/_225pxh"
+        android:layout_height="@dimen/_24pxh"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_almostdone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/img_almostdone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

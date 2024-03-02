@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/usur_register_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.works.solutionchallange2024.view.MainFragment"
+        android:label="mainFragment" >
+        <action
+            android:id="@+id/registerTransition"
+            app:destination="@id/registerFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.works.solutionchallange2024.view.LoginFragment"
+        android:label="LoginFragment" >
+        <argument
+            android:name="password"
+            app:argType="string"
+            android:defaultValue="password" />
+        <argument
+            android:name="userName"
+            app:argType="string"
+            android:defaultValue="userName" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment1"
+            app:destination="@id/registerFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment1"
+        android:name="com.works.solutionchallange2024.view.RegisterFragment1"
+        android:label="RegisterFragment1" >
+        <action
+            android:id="@+id/registerTransition"
+            app:destination="@id/registerFragment2" />
+        <action
+            android:id="@+id/registerToLoginTransition"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment2"
+        android:name="com.works.solutionchallange2024.view.RegisterFragment2"
+        android:label="RegisterFragment2" >
+        <argument
+            android:name="nameAndSurname"
+            app:argType="string"
+            android:defaultValue="name" />
+        <argument
+            android:name="userName"
+            app:argType="string"
+            android:defaultValue="username" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="phone"
+            app:argType="string"
+            android:defaultValue="05464072222" />
+        <action
+            android:id="@+id/registerTransition2"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

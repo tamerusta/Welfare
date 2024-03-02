@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_page_nav"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.works.solutionchallange2024.view.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_productBuyDetailFragment"
+            app:destination="@id/productBuyDetailFragment2" />
+        <argument
+            android:name="category"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.works.solutionchallange2024.view.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" >
+            <argument
+                android:name="category"
+                android:defaultValue="default" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.works.solutionchallange2024.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_profileInformationFragment"
+            app:destination="@id/profileInformationFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_profileFavouritesFragment"
+            app:destination="@id/profileFavouritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actionsFragment"
+        android:name="com.works.solutionchallange2024.view.ActivitiesFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_activities" >
+        <action
+            android:id="@+id/action_actionsFragment_to_sell2Fragment"
+            app:destination="@id/sell2Fragment" />
+        <action
+            android:id="@+id/action_actionsFragment_to_sellPageFragment"
+            app:destination="@id/sellPageFragment" />
+        <action
+            android:id="@+id/action_actionsFragment_to_productBuyDetailFragment2"
+            app:destination="@id/productBuyDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/productBuyDetailFragment2"
+        android:name="com.works.solutionchallange2024.view.ProductBuyDetailFragment"
+        android:label="fragment_product_buy_detail"
+        tools:layout="@layout/fragment_product_buy_detail" >
+        <argument
+            android:name="advertId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_productBuyDetailFragment2_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <argument
+        android:name="category"
+        android:defaultValue="default" />
+    <fragment
+        android:id="@+id/profileFavouritesFragment"
+        android:name="com.works.solutionchallange2024.view.ProfileFavouritesFragment"
+        android:label="fragment_profile_favourites"
+        tools:layout="@layout/fragment_profile_favourites" >
+        <action
+            android:id="@+id/action_profileFavouritesFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileChangePasswordFragment"
+        android:name="com.works.solutionchallange2024.view.ProfileChangePasswordFragment"
+        android:label="fragment_profile_change_password"
+        tools:layout="@layout/fragment_profile_change_password" >
+        <action
+            android:id="@+id/action_profileChangePasswordFragment_to_profileInformationFragment"
+            app:destination="@id/profileInformationFragment" />
+        <action
+            android:id="@+id/action_profileChangePasswordFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileInformationFragment"
+        android:name="com.works.solutionchallange2024.view.ProfileInformationFragment"
+        android:label="fragment_profile_information"
+        tools:layout="@layout/fragment_profile_information" >
+        <action
+            android:id="@+id/action_profileInformationFragment_to_profileChangePasswordFragment"
+            app:destination="@id/profileChangePasswordFragment" />
+        <action
+            android:id="@+id/action_profileInformationFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sell2Fragment"
+        android:name="com.works.solutionchallange2024.view.Sell2Fragment"
+        android:label="fragment_sell"
+        tools:layout="@layout/fragment_sell" />
+    <fragment
+        android:id="@+id/activitiesFragment"
+        android:name="com.works.solutionchallange2024.view.ActivitiesFragment"
+        android:label="ActivitiesFragment" />
+    <fragment
+        android:id="@+id/sellPageFragment"
+        android:name="com.works.solutionchallange2024.view.SellPageFragment"
+        android:label="fragment_sell_page"
+        tools:layout="@layout/fragment_sell_page" >
+        <argument
+            android:name="advertId"
+            app:argType="string" />
+    </fragment>
+</navigation>

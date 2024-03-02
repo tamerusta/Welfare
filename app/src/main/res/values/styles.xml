@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="groupStylecornerRadius_2">
+        <item name="android:background">@drawable/rectangle_gradient_s_white_a700_e_white_a700_7f_radius_27</item>
+    </style>
+    <style name="groupStylecornerRadius_1">
+        <item name="android:background">@drawable/rectangle_border_gray_50_radius_10</item>
+    </style>
+    <style name="txtLexendbold28_1">
+        <item name="android:textSize">@dimen/_28pxh</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="btnGradientRounded">
+        <item name="android:textSize">@dimen/_28pxh</item>
+        <item name="android:textColor">@color/green_600</item>
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+        <item name="android:background">@drawable/rectangle_gradient_s_white_a700_e_white_a700_7f_radius_27</item>
+    </style>
+    <style name="txtLexendregular30">
+        <item name="android:textSize">@dimen/_30pxh</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtLexendlight15">
+        <item name="android:textSize">@dimen/_15pxh</item>
+        <item name="android:textColor">@color/gray_50</item>
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+    <style name="groupStylecornerRadius">
+        <item name="android:background">@drawable/rectangle_gradient_s_green_800_c_green_700_89_e_green_500_75_radius_50</item>
+    </style>
+    <style name="txtLedgerregular28">
+        <item name="android:textSize">@dimen/_28pxh</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/ledger</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtLexendbold32">
+        <item name="android:textSize">@dimen/_32pxh</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="groupStylebluegray_100cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_100_radius_110</item>
+    </style>
+    <style name="txtLexendbold28">
+        <item name="android:textSize">@dimen/_28pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="groupStyle">
+        <item name="android:background">@drawable/rectangle_gradient_s_green_800_c_green_700_89_e_green_500_75</item>
+    </style>
+    <style name="txtLexendlight15_1">
+        <item name="android:textSize">@dimen/_15pxh</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+    <style name="EditTextWithoutUnderline" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <!-- Other attributes like text appearance, text size, etc. can be added here if needed -->
+    </style>
+</resources>
