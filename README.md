@@ -141,20 +141,3 @@ dependencies {
     implementation("com.google.android.gms:play-services-location:18.0.0")
 }
 ```
-
-
-## Demo
-
-[Click here for our demo video](https://www.youtube.com/watch?v=oYDCdbKiqoI)
-
-
-
-
-
-
-
-
-
-
-
-
